@@ -13,7 +13,7 @@ interface IDragabbleCardProps {
   toDo: string;
   index: number;
 }
-function DragabbleCard({ toDo, index }) {
+function DragabbleCard({ toDo, index }: IDragabbleCardProps) {
   return (
     <Draggable key={toDo} draggableId={toDo} index={index}>
       {(magic) => (
